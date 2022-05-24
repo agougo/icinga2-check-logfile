@@ -5,7 +5,6 @@ This is a simple *powershell script* that will parse a log file and alert based 
 #### Instructions
 
 Copy file *icinga2-check-logfile.ps1* into the following directory: C:\Program Files\ICINGA2\sbin\ <br>
-vvv
 
 #### Execution
 
@@ -22,11 +21,11 @@ object CheckCommand "icinga2_check_logfile" {
     ]
     arguments += {
         "-ErrorString" = {
-            order = 2
+            order = 3
             value = "$errorstring$"
         }
         "-LogPath" = {
-            order = 1
+            order = 4
             value = "$logpath$"
         }
         "-OkString" = {
@@ -34,7 +33,7 @@ object CheckCommand "icinga2_check_logfile" {
             value = "$okstring$"
         }
         "-command" = {
-            order = -1
+            order = 1
             value = "$ps_command$"
         }
         ";exit" = {
