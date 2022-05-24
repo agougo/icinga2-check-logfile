@@ -61,9 +61,8 @@ template Service "generic-service" {
 ```
 ```
 object Service "Check Log for error" {
-    host_name = "HOSTNAME"
+    
     import "generic-service"
-
     check_command = "icinga2_check_logfile"
     
     vars.errorstring = "'this is your error string'"
