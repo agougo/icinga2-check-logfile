@@ -21,15 +21,15 @@ object CheckCommand "icinga2_check_logfile" {
     ]
     arguments += {
         "-ErrorString" = {
-            order = 2
+            order = 3
             value = "$errorstring$"
         }
         "-LogPath" = {
-            order = 1
+            order = 2
             value = "$logpath$"
         }
         "-OkString" = {
-            order = 3
+            order = 4
             value = "$okstring$"
         }
         "-command" = {
