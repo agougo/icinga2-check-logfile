@@ -1,6 +1,6 @@
 ### icinga2-check-logfile
 
-This is a simple *powershell script* that will parse a log file and alert based on a critical and an OK value.
+This is a simple *powershell script* that will parse a log file and alert based on a critical and an OK value. The script was also put into chatgpt and an improved version was produced but it is not tested.
 
 #### Instructions
 
